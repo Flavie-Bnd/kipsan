@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klipsan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="img/favicon_klipsan.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">Klipsan</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Calendrier</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Boutique</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Connexion</a></li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fa-solid fa-cart-shopping"></i> 0</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="hero">
+        <h1>Faites du<br />sport à votre<br />rythme.</h1>
+        <a href="#">Rejoignez notre gym</a>
+      </section>
+
+      <section class="propos">
+        <div class="first_container">
+          <h2>
+            PROFITEZ DE NOTRE SALLE DE SPORT SANTÉ ET BIEN-ÊTRE POUR UN PRIX
+            RAISONNABLE.
+          </h2>
+          <p>
+            Klipsan Fitness est une salle de sport où vous ne serez jamais
+            jugé(e). Notre abonnement vous donne droit à des cours virtuels ou
+            en salle pour vous aider à atteindre vos objectifs sportifs.
+            Découvrez ci-dessous toutes les offres de notre club.
+          </p>
+        </div>
+
+        <div class="second_container">
+          <img class="base_image" src="img/2888486jpgOriginalDelivery.jpg" alt="" width="425" />
+          <img class="overlay_image" src="img/1716607jpgOriginalDelivery.jpg" alt="" width="425" />
+        </div>
+        
+        <div>
+          <h3>Aménagements</h3>
+          <p>
+            À Klipsan Fitness, nous faisons régulièrement l'acquisition de
+            nouveaux équipements pour répondre aux besoins de nos membres. Vous
+            souhaitez ajouter quelque chose à notre liste ? Faites une demande.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>Equipements modernes</li>
+            <li>Cours de qualité</li>
+            <li>Entraineurs personnels</li>
+            <li>Mur d'escalade</li>
+            <li>Ring de box</li>
+          </ul>
+          <ul>
+            <li>Bar à jus</li>
+            <li>Nutitrion</li>
+            <li>Pass invité mensuel</li>
+            <li>Terrains de basket-ball</li>
+            <li>Casiers</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          // Ajustez la valeur selon vos besoins
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
